@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutas Seguras Kids</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loginScreen" class="login">
+  <div class="login-box">
+    <h2>Rutas Seguras Kids</h2>
+
+    <input id="user" placeholder="Usuario">
+    <input id="pass" type="password" placeholder="Contraseña">
+
+    <button id="loginBtn">Ingresar</button>
+    <p id="loginError"></p>
+  </div>
+</div>
+
+<div id="app" style="display:none;">
+
+<h1>Rutas Seguras Kids</h1>
+
+<div id="msgBox"></div>
+
+<div class="layout">
+
+  <div class="left">
+
+    <div class="block">
+      <h3>Conductores</h3>
+      <select id="driverSelect">
+        <option value="">Seleccionar conductor</option>
+        <option value="Juan Pérez">Juan Pérez</option>
+        <option value="Ana Gómez">Ana Gómez</option>
+        <option value="Carlos Díaz">Carlos Díaz</option>
+      </select>
+    </div>
+
+    <div class="block">
+      <h3>Crear ruta</h3>
+      <input id="routeName" placeholder="Nombre ruta">
+      <input id="city" placeholder="Lugar">
+      <input type="time" id="time">
+      <button id="createRoute">Crear ruta</button>
+    </div>
+
+    <div class="block">
+      <h3>Estudiantes</h3>
+      <input id="studentName" placeholder="Nombre">
+      <input id="studentGrade" placeholder="Grado">
+      <select id="studentRoute"></select>
+      <button id="addStudent">Agregar estudiante</button>
+    </div>
+
+    <div class="block">
+      <h3>Estudiantes registrados</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Grado</th>
+            <th>Ruta</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody id="studentsBody"></tbody>
+      </table>
+    </div>
+
+    <div class="block">
+      <h3>Rutas creadas</h3>
+      <div id="routesContainer"></div>
+    </div>
+
+  </div>
+
+  <div class="right">
+
+    <div class="block">
+      <h3>Artículos de Seguridad</h3>
+
+      <article-card title="Botiquín" short="Primeros auxilios"
+      desc="Kit médico esencial para emergencias escolares."
+      img="https://static.vecteezy.com/system/resources/previews/016/148/562/non_2x/first-aid-kit-icon-in-comic-style-health-help-and-medical-diagnostics-cartoon-illustration-on-white-isolated-background-doctor-bag-business-concept-splash-effect-vector.jpg">
+      </article-card>
+
+      <article-card title="Extintor" short="Incendios"
+      desc="Dispositivo para apagar incendios en su fase inicial."
+      img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYxi7mhulPZorFPdABVhpwoRgnzowozIlexg&s">
+      </article-card>
+
+      <article-card title="Señales Viales" short="Tránsito"
+      desc="Regulan el comportamiento en la vía."
+      img="https://img.freepik.com/vector-premium/semaforo-dibujos-animados-senales-trafico-seguridad-ninos-senales-precaucion-advertencia-automoviles-peatones-conjunto-vectores-elementos-reglas-trafico_102902-5166.jpg">
+      </article-card>
+
+      <article-card title="Chaleco Reflectivo" short="Visibilidad"
+      desc="Mejora la visibilidad en la vía."
+      img="https://png.pngtree.com/png-clipart/20230925/original/pngtree-green-reflective-vest-worker-on-the-track-green-wear-work-wear-png-image_12865642.png">
+      </article-card>
+
+      <article-card title="Cinturón de Seguridad" short="Protección"
+      desc="Reduce lesiones en accidentes."
+      img="https://img.freepik.com/vector-premium/icono-cinturon-seguridad-aviacion-estilo-dibujos-animados-sobre-fondo-blanco_96318-19324.jpg">
+      </article-card>
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+<script type="module" src="validaciones.js"></script>
+<script type="module" src="webComponent.js"></script>
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
