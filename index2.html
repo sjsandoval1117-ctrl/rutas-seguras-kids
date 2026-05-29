@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutas Seguras Kids</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loginScreen" class="login">
+  <div class="login-box">
+    <h2>Rutas Seguras Kids</h2>
+
+    <input id="user" placeholder="Usuario">
+    <input id="pass" type="password" placeholder="Contraseña">
+
+    <button id="loginBtn">Ingresar</button>
+    <p id="loginError"></p>
+  </div>
+</div>
+
+<div id="app" style="display:none;">
+
+<h1>Rutas Seguras Kids</h1>
+
+<div id="msgBox"></div>
+
+<div class="layout">
+
+  <div class="left">
+
+    <div class="block">
+      <h3>Rutas</h3>
+      <select id="RouteSelect">
+        <option value="Seleccionar ruta">Seleccionar ruta</option>
+        <option value="Ruta Norte">Ruta Norte</option>
+        <option value="Ruta Sur">Rut Sur</option>
+        <option value="Ruta Centro">Ruta Centro</option>
+        <option value="Todas">Todas</option>
+        <button id="add">Agregar Rutas</button>
+      </select>
+    </div>
+
+    <div class="block">
+      <h3>Estudiantes</h3>
+      <input id="studentName" placeholder="Nombre"> 
+      <button id="addStudent">Agrega Estudiantes</button>
+    </div>
+
+    <div class="block">
+      <h3>Estudiantes registrados</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th><th>Ruta</th><th>Color</th>
+
+        </thead>
+        <tbody id="studentsBody"></tbody>
+      </table>
+    </div>
+
+
+    <div class="block">
+      <h3>Rutas creadas</h3>
+      <div id="routesContainer"></div>
+    </div>
+
+</div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+<script type="module" src="validaciones.js"></script>
+<script type="module" src="webComponent.js"></script>
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
