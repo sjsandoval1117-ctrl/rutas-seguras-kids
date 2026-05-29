@@ -1,25 +1,22 @@
-export function clean(v) {
-  return v ? v.trim() : "";
-}
 
-export function validateStudent(n, g, r) {
-  n = clean(n);
-  g = clean(g);
-  r = clean(r);
+export function validateRoute(name, city, time, driver){
 
-  if (!n || !g || !r) return "Completa estudiante";
-  if (n.length < 3) return "Nombre corto";
+  if(!city.trim()){
+    return "Ingrese el lugar";
+  }
 
   return true;
 }
 
-export function validateRoute(n, c, t, d) {
-  n = clean(n);
-  c = clean(c);
-  t = clean(t);
-  d = clean(d);
+export function validateStudent(name,route){
 
-  if (!n || !c || !t || !d) return "Completa ruta";
+  if(!name.trim()){
+    return "Ingrese nombre del estudiante";
+  }
+
+  if(!route){
+    return "Seleccione una ruta";
+  }
 
   return true;
 }
